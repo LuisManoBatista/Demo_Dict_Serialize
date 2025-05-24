@@ -231,4 +231,11 @@ if (deserializedArrayPerson != null)
 }
 
 Console.WriteLine("\nPress any key to exit...");
-Console.ReadKey();
+try
+{
+    Console.ReadLine();
+}
+catch
+{
+    // In non-interactive environments, just exit gracefully
+}
